@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html ng-app="deja.vu">
+
+<head>
+    <meta charset="utf-8">
+    <title>Get Out Of The Matrix</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/journal/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <base href="/" />
+</head>
+
+<body>
+    <header class="container page-header text-center">
+        <h1>Choose Your Pill!</h1>
+        <button type="button" class="btn btn-primary" ui-sref="landing">
+			  Home
+			</button>
+			<button type="button" class="btn btn-default" ui-sref="one">
+			 Option One
+			</button>
+			<button type="button" class="btn btn-default" ui-sref="wrong">
+			  Option Two
+			</button>
+
+    </header>
+    <main class="container">
+        <ui-view></ui-view>
+
+    </main>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.0-beta.3/angular-ui-router.js" charset="utf-8"></script>
+    <script src="/app/app.module.js" charset="utf-8"></script>
+    <script src="/app/app.config.js" charset="utf-8"></script>
+    <script src="/app/landing/landing.controller.js" charset="utf-8"></script>
+    <script src="/app/landing/landing.component.js" charset="utf-8"></script>
+    <script src="/app/choose-player/choose-player.controller.js" charset="utf-8"></script>
+    <script src="/app/choose-player/choose-player.component.js" charset="utf-8"></script>
+    <script src="/app/optionOne/optionOne.controller.js" charset="utf-8"></script>
+    <script src="/app/optionOne/optionOne.component.js" charset="utf-8"></script>
+    <script src="/app/wrongOption/wrongOption.controller.js" charset="utf-8"></script>
+    <script src="/app/wrongOption/wrongOption.component.js" charset="utf-8"></script>
+
+
+</body>
+
+</html>
